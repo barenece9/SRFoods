@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorbg"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="fill_parent"
+        android:id="@+id/include"
+        android:layout_height="wrap_content"
+        layout="@layout/header_item" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/include"
+        android:layout_marginTop="10dp">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="Personal Details"
+                android:textColor="#000000"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dealer Name"
+                android:textColor="#000000"/>
+
+
+            <EditText
+                android:id="@+id/etndealername"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_gravity="center_horizontal"
+                android:paddingLeft="25dp"
+                android:background="@drawable/rectangle_non_edit_bg"
+                android:scaleType="centerCrop"
+                android:hint="enter dealer name*"
+                android:textColor="#000000"
+                android:textSize="17sp"
+                android:editable="false"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dealer Email"
+                android:layout_marginTop="5dp"
+                android:textColor="#000000"/>
+
+            <EditText
+                android:id="@+id/etndealeremail"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_gravity="center_horizontal"
+                android:paddingLeft="25dp"
+                android:background="@drawable/rectangle_edit_bg"
+                android:scaleType="centerCrop"
+                android:hint="enter dealer email*"
+                android:textColor="#000000"
+                android:textSize="17sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dealer Phone"
+                android:layout_marginTop="5dp"
+                android:textColor="#000000"/>
+
+            <EditText
+                android:id="@+id/etndealerephone"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_gravity="center_horizontal"
+                android:paddingLeft="25dp"
+                android:background="@drawable/rectangle_edit_bg"
+                android:scaleType="centerCrop"
+                android:hint="enter dealer phone"
+                android:textColor="#000000"
+                android:textSize="17sp"
+                android:inputType="number"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dealer Registered Mobile"
+                android:layout_marginTop="5dp"
+                android:textColor="#000000"/>
+
+            <EditText
+                android:id="@+id/etndealeremobile"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_gravity="center_horizontal"
+                android:paddingLeft="25dp"
+                android:background="@drawable/rectangle_non_edit_bg"
+                android:scaleType="centerCrop"
+                android:hint="enter dealer mobile*"
+                android:textColor="#000000"
+                android:textSize="17sp"
+                android:editable="false"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dealer Additional mobile"
+                android:layout_marginTop="5dp"
+                android:textColor="#000000"/>
+
+            <EditText
+                android:id="@+id/etndealereadditionalmobile"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_gravity="center_horizontal"
+                android:paddingLeft="25dp"
+                android:background="@drawable/rectangle_edit_bg"
+                android:scaleType="centerCrop"
+                android:hint="enter dealer additional mobile"
+                android:textColor="#000000"
+                android:textSize="17sp"
+                android:inputType="number"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dealer Username"
+                android:layout_marginTop="5dp"
+                android:textColor="#000000"
+                android:visibility="gone"/>
+
+            <EditText
+                android:id="@+id/etndealerusername"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_gravity="center_horizontal"
+                android:paddingLeft="25dp"
+                android:background="@drawable/rectangle_edit_bg"
+                android:scaleType="centerCrop"
+                android:hint="enter user name*"
+                android:textColor="#000000"
+                android:textSize="17sp"
+                android:visibility="gone"/>
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dealer Address"
+                android:layout_marginTop="5dp"
+                android:textColor="#000000"/>
+
+            <EditText
+                android:id="@+id/etndealereaddress"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_gravity="center_horizontal"
+                android:paddingLeft="25dp"
+                android:background="@drawable/rectangle_non_edit_bg"
+                android:scaleType="centerCrop"
+                android:hint="enter dealer address*"
+                android:textColor="#000000"
+                android:textSize="17sp"
+                android:editable="false"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dealer Shipping Address"
+                android:layout_marginTop="5dp"
+                android:textColor="#000000"/>
+
+            <EditText
+                android:id="@+id/etndealereshippingaddress"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_gravity="center_horizontal"
+                android:paddingLeft="25dp"
+                android:background="@drawable/rectangle_non_edit_bg"
+                android:scaleType="centerCrop"
+                android:hint="enter dealer shipping address*"
+                android:textColor="#000000"
+                android:textSize="17sp"
+                android:editable="false"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dealer Location"
+                android:layout_marginTop="5dp"
+                android:textColor="#000000"/>
+
+            <EditText
+                android:id="@+id/etndealerlocation"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_gravity="center_horizontal"
+                android:paddingLeft="25dp"
+                android:background="@drawable/rectangle_non_edit_bg"
+                android:scaleType="centerCrop"
+                android:hint="enter dealer location*"
+                android:textColor="#000000"
+                android:textSize="17sp"
+                android:editable="false"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dealer City"
+                android:layout_marginTop="5dp"
+                android:textColor="#000000"/>
+
+            <EditText
+                android:id="@+id/etndealercity"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_gravity="center_horizontal"
+                android:paddingLeft="25dp"
+                android:background="@drawable/rectangle_non_edit_bg"
+                android:scaleType="centerCrop"
+                android:hint="enter city*"
+                android:textColor="#000000"
+                android:textSize="17sp"
+                android:editable="false"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dealer State"
+                android:layout_marginTop="5dp"
+                android:textColor="#000000"/>
+
+            <Spinner
+                android:id="@+id/spinnerdealerstate"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_gravity="center_horizontal"
+                android:paddingLeft="25dp"
+                android:background="@drawable/rectangle_non_edit_bg"
+                android:scaleType="centerCrop"
+                android:hint="select state"
+                android:textColor="#000000"
+                android:textSize="17sp"
+                android:enabled="false"
+                android:clickable="false"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dealer Zipcode"
+                android:layout_marginTop="5dp"
+                android:textColor="#000000"/>
+
+            <EditText
+                android:id="@+id/etndealerzip"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_gravity="center_horizontal"
+                android:paddingLeft="25dp"
+                android:background="@drawable/rectangle_non_edit_bg"
+                android:scaleType="centerCrop"
+                android:hint="enter pin/zip*"
+                android:textColor="#000000"
+                android:textSize="17sp"
+
+                android:editable="false" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dealer Vat Reg.Type"
+                android:layout_marginTop="5dp"
+                android:textColor="#000000"/>
+
+            <Spinner
+                android:id="@+id/spinnervatreg"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_gravity="center_horizontal"
+                android:paddingLeft="25dp"
+                android:background="@drawable/rectangle_non_edit_bg"
+                android:scaleType="centerCrop"
+                android:hint="select vat reg or not"
+                android:textColor="#000000"
+                android:textSize="17sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Regd. Vat No."
+                android:layout_marginTop="5dp"
+                android:textColor="#000000"/>
+
+            <EditText
+                android:id="@+id/etndealervatno"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_gravity="center_horizontal"
+                android:paddingLeft="25dp"
+                android:background="@drawable/rectangle_non_edit_bg"
+                android:scaleType="centerCrop"
+                android:hint="enter vat no"
+                android:textColor="#000000"
+                android:textSize="17sp"
+                android:editable="false"/>
+
+            <Button
+                android:id="@+id/btndealerreg"
+                android:layout_width="105dp"
+                android:layout_height="35dp"
+                android:background="#DD371B"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="20dp"
+                android:scaleType="centerCrop"
+                android:text="Update"
+                android:layout_marginBottom="10dp"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="Password Update"
+                android:textColor="#000000"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dealer Old Password"
+                android:layout_marginTop="5dp"
+                android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/etndealereoldpassword"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_gravity="center_horizontal"
+                android:paddingLeft="25dp"
+                android:background="@drawable/rectangle_edit_bg"
+                android:scaleType="centerCrop"
+                android:hint="enter old password*"
+                android:textColor="#000000"
+                android:textSize="17sp"
+                android:password="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dealer New Password"
+                android:layout_marginTop="5dp"
+                android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/etndealerepassword"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_gravity="center_horizontal"
+                android:paddingLeft="25dp"
+                android:background="@drawable/rectangle_edit_bg"
+                android:scaleType="centerCrop"
+                android:hint="enter new password*"
+                android:textColor="#000000"
+                android:textSize="17sp"
+                android:password="true" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dealer Confirm Password"
+                android:layout_marginTop="5dp"
+                android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/etndealereconpassword"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_gravity="center_horizontal"
+                android:paddingLeft="25dp"
+                android:background="@drawable/rectangle_edit_bg"
+                android:scaleType="centerCrop"
+                android:hint="enter confirm password*"
+                android:textColor="#000000"
+                android:textSize="17sp"
+                android:password="true" />
+
+            <Button
+                android:id="@+id/btndealerpassupdate"
+                android:layout_width="105dp"
+                android:layout_height="35dp"
+                android:background="#DD371B"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="20dp"
+                android:scaleType="centerCrop"
+                android:text="Update"
+                android:layout_marginBottom="10dp"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

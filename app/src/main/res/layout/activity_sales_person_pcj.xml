@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorbg"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/include"
+        layout="@layout/header_item_pcj" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/include">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:gravity="center">
+
+
+
+        <Button
+            android:id="@+id/btndealerprofile"
+            android:text="DEALER PROFILE"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:onClick="click"
+            android:background="#DD371B"
+            android:textColor="@color/coloricon"
+            android:visibility="gone"
+            android:textSize="17sp" />
+
+        <Button
+            android:id="@+id/btndealernewoder"
+            android:text="NEW ORDER"
+            android:layout_marginTop="20dp"
+
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:onClick="click"
+            android:background="#DD371B"
+            android:textColor="@color/coloricon"
+            android:textSize="17sp" />
+
+        <Button
+            android:id="@+id/btndealerpriviousoder"
+            android:text="PREVIOUS ORDER"
+
+            android:layout_marginTop="20dp"
+
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:onClick="click"
+            android:background="#DD371B"
+            android:textColor="@color/coloricon"
+            android:textSize="17sp" />
+
+        <Button
+            android:id="@+id/btndealerscheme"
+            android:text="VIEW SCHEME"
+
+            android:layout_marginTop="20dp"
+
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:onClick="click"
+            android:background="#DD371B"
+            android:textColor="@color/coloricon"
+            android:textSize="17sp"
+            android:visibility="gone"/>
+
+
+        <Button
+            android:id="@+id/btnOutstanding"
+            android:text="OUTSTANDING"
+
+            android:layout_marginTop="20dp"
+
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:onClick="click"
+            android:background="#DD371B"
+            android:textColor="@color/coloricon"
+            android:textSize="17sp"
+            android:visibility="gone"/>
+
+
+    </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

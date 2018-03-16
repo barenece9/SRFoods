@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorbg"
+    android:orientation="horizontal"
+    android:padding="0dip" >
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:paddingLeft="0dp"
+        android:orientation="vertical">
+
+        <!-- Rightend Duration -->
+        <TextView
+            android:id="@+id/Payment_Amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="Payment_Amount"
+            android:layout_marginRight="5dip"
+            android:textSize="11dip"
+            android:textColor="#343434"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/Payment_Mode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Payment_Mode"
+            android:textColor="#343434"
+            android:textSize="11dip"
+            android:textStyle="bold"/>
+
+
+
+
+        <TextView
+            android:id="@+id/Cheque_No"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cheque_No"
+            android:visibility="gone"
+            android:textColor="#343434"
+            android:textSize="11dip"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/Payment_Status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Payment_Status"
+            android:textColor="#343434"
+            android:textSize="11dip"
+            android:visibility="gone"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/Payment_Date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Payment_Date"
+            android:textColor="#343434"
+            android:textSize="11dip"
+            android:layout_marginBottom="5dp"
+            android:textStyle="bold"/>
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
+
+

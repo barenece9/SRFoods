@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingLeft="10dip"
+    android:paddingRight="10dp"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    android:background="@color/colorbg">
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:paddingLeft="0dp"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/Product_Code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Product_Code"
+            android:textColor="#040404" />
+
+        <!-- Artist Name -->
+        <TextView
+            android:id="@+id/Product_Name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dip"
+            android:text="Product_Name"
+            android:textColor="#040404" />
+
+        <!-- Rightend Duration -->
+        <TextView
+            android:id="@+id/MRP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="MRP"
+            android:layout_marginRight="5dip"
+            android:textColor="#040404" />
+
+        <TextView
+            android:id="@+id/Selling_Price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Selling_Price"
+            android:textColor="#040404" />
+
+
+        <!--**********************-->
+
+        <TextView
+            android:id="@+id/Weight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Weight"
+            />
+
+        <!-- Artist Name -->
+        <TextView
+            android:id="@+id/Product_Qty"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#040404"
+            android:layout_marginTop="1dip"
+            android:text="Product_Qty"
+            />
+
+        <!-- Rightend Duration -->
+        <TextView
+            android:id="@+id/Total_Weight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="Total_Weight"
+            android:layout_marginRight="5dip"
+            android:textColor="#040404"/>
+
+        <TextView
+            android:id="@+id/Total_Amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total_Amount"
+            android:textColor="#040404" />
+        <!--##################-->
+
+
+        <!--**********************-->
+
+        <TextView
+            android:id="@+id/schemeNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="schemeNo" />
+
+        <!-- Artist Name -->
+        <TextView
+            android:id="@+id/VAT"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#343434"
+            android:layout_marginTop="1dip"
+            android:text="VAT" />
+
+        <!-- Rightend Duration -->
+        <TextView
+            android:id="@+id/Free_Item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="Free_Item"
+            android:layout_marginRight="5dip"
+            android:textColor="#343434" />
+
+        <!--<TextView
+            android:id="@+id/Batch_No"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Batch No"
+            android:textColor="#343434" />-->
+        <!--##################-->
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:orientation="vertical">
+
+        <!-- Artist Name -->
+
+
+    </LinearLayout>
+
+</LinearLayout>
+
+

@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorbg"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/include"
+        layout="@layout/header_item_pcj" />
+
+    <ScrollView
+        android:layout_below="@+id/include"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:layout_marginLeft="2sp"
+        android:layout_marginRight="2sp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pay the bill"
+            android:visibility="gone"
+            android:id="@+id/btn_download"
+            android:layout_marginBottom="2sp"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="20sp"
+                android:layout_marginLeft="5dp"
+                android:text="Total Invoice"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/total_amount"
+                android:textSize="20sp"
+                android:layout_weight="1"
+                android:text="INR0000.00"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="20sp"
+                android:layout_marginLeft="5dp"
+                android:text="Total Due"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/due_amount"
+                android:textSize="20sp"
+                android:layout_weight="1"
+                android:text="INR0000.00"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:textSize="20sp"
+                android:layout_marginLeft="5dp"
+                android:text="Payment Mode"/>
+
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/radio_group"
+                android:layout_weight="1"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/radio_cash"
+                    android:layout_weight="1.5"
+                    android:text="cash"/>
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/radio_cheque"
+                    android:layout_weight="1.5"
+                    android:text="cheque"/>
+            </RadioGroup>
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/ll_cheque"
+            android:layout_marginTop="5dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_chequeno"
+                android:layout_weight="1.5"
+                android:gravity="center_vertical"
+                android:textSize="20sp"
+                android:layout_marginLeft="5dp"
+                android:text="Cheque No"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:id="@+id/cheque_no"
+                android:inputType="number"
+                android:textSize="20sp"
+                android:layout_weight="1"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/ractangle_box_pcj" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/ll_bankname"
+            android:layout_marginTop="5dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_bankname"
+                android:layout_weight="1.5"
+                android:gravity="center_vertical"
+                android:textSize="20sp"
+                android:layout_marginLeft="5dp"
+                android:text="Bank Name"/>
+            <AutoCompleteTextView
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:textSize="20sp"
+                android:id="@+id/bank_name"
+                android:layout_weight="1"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/ractangle_box_pcj" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="20sp"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:text="Pay Amount"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:id="@+id/etn_exact_amount"
+                android:textSize="20sp"
+                android:layout_weight="1"
+                android:paddingLeft="5dp"
+                android:hint="enter amount"
+                android:layout_marginRight="5dp"
+                android:inputType="number"
+                android:background="@drawable/ractangle_box_pcj" />
+        </LinearLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:layout_marginTop="25dp"
+            android:text="Pay"
+            android:background="#DD371B"
+            android:textColor="@color/coloricon"
+            android:layout_gravity="center"
+            android:id="@+id/btn_pay"
+            android:layout_marginBottom="2sp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:layout_marginTop="15dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="Deliver Without Payment"
+            android:background="#DD371B"
+            android:textColor="@color/coloricon"
+            android:layout_gravity="center"
+            android:id="@+id/btn_skip"
+            android:layout_marginBottom="2sp" />
+
+
+    </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

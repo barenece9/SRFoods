@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorbg"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/include"
+        layout="@layout/header_item_pcj" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="false"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/include"
+        android:orientation="vertical"
+        android:padding="5dp"
+        android:gravity="center">
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:dividerHeight="2dp"
+            android:id="@+id/scheme_list"
+            android:layout_marginBottom="45dp">
+        </ListView>
+
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Total Outstanding"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/total_due"/>
+
+</RelativeLayout>

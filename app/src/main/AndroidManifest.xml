@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.lnsel.srfoods">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:name=".appconroller.AppController"
+        android:allowBackup="true"
+        android:icon="@drawable/logo_icon"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.SplashActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.HomeActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+
+        <activity
+            android:name=".activity2.HomeActivity2"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+
+        <activity
+            android:name=".activity.LogintypeActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+
+        <activity
+            android:name=".activity2.LogintypeActivity2"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+
+        <activity
+            android:name=".activity.RegisterTypeActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+
+        <activity
+            android:name=".activity2.RegisterTypeActivity2"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+
+        <activity
+            android:name=".activity.DelivaryActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+
+        <activity
+            android:name=".activity2.DelivaryActivity2"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+
+        <activity
+            android:name=".activity.DelareActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".activity2.DealerActivity2"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".activity.DelareLoginActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+
+        <activity
+            android:name=".activity2.DelareLoginActivity2"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+
+        <activity
+            android:name=".activity.DelareRegActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+
+        <activity
+            android:name=".activity2.DelareRegActivity2"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+
+        <activity
+            android:name=".activity.DealerProfile"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity2.DealerProfile2"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.DealerNeworder"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity2.DealerNeworder2"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ForgotePassActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activity2.ForgotePassActivity2"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.DeliveryBoyLoginActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".activity2.DeliveryBoyLoginActivity2"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".activity.DealerPreviousActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity2.DealerPreviousActivity2"
+            android:screenOrientation="portrait" />
+        <activity
+        android:name=".activity.ConfirmOrderDetails"
+        android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity2.ConfirmOrderDetails2"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ApprovalPendingOrderDetails"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activity2.ApprovalPendingOrderDetails2"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.DispatchedOrderDetails"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity2.DispatchedOrderDetails2"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.DeliveryBoyOrderListActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activity2.DeliveryBoyOrderListActivity2"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activity.DeliveryOrderDetails"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activity2.DeliveryOrderDetails2"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.DeliveryBoyPaymentReceive"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activity2.DeliveryBoyPaymentReceive2"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activity.SchemeView"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity2.SchemeView2"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.CaptureSignature"
+            android:screenOrientation="portrait" />
+
+        <service
+            android:name=".activity.MyService"
+            android:enabled="true"
+            android:stopWithTask="false" />
+        <service
+            android:name=".activity.LocationService"
+            android:enabled="true"
+            android:stopWithTask="false" />
+
+        <service
+            android:name=".activity2.LocationService2"
+            android:enabled="true"
+            android:stopWithTask="false" />
+
+        <service
+            android:name=".activity.MyLocation"
+            android:enabled="true"
+            android:stopWithTask="false" />
+
+        <activity android:name=".activity.SignatureActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".activity2.SignatureActivity2"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".activity.DeliveryCompleteOrderDetails"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".activity2.DeliveryCompleteOrderDetails2"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".activity.DeliveryBoyCompleteOrderActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".activity2.DeliveryBoyCompleteOrderActivity2"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".activity.DealerDeliveryOrderDetails"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".activity2.DealerDeliveryOrderDetails2"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".activity.DealerOutstandingOrderDetails"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".activity.DealerOutstanding"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".activity2.DealerOutstanding2"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".activity.DealerOutstandingDetails"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity android:name=".activity.SalesParsonLoginActivity"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity android:name=".activity.SalesPersonActivity"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity android:name=".activity.SalesPersonNeworder"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity android:name=".activity.SalesPersonPreviousActivity"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity android:name=".activity2.SalesParsonLoginActivity2"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity android:name=".activity2.SalesPersonActivity2"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity android:name=".activity2.SalesPersonNeworder2"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity android:name=".activity2.SalesPersonPreviousActivity2"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity android:name=".activity.SalesPersonOrderDetails"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity android:name=".activity2.SalesPersonOrderDetails2"
+            android:screenOrientation="portrait">
+        </activity>
+
+
+    </application>
+
+</manifest>

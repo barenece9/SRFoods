@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorbg"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/header_item" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:layout_marginTop="72dp"
+        android:orientation="vertical"
+        android:layout_marginLeft="2sp"
+        android:layout_marginRight="2sp">
+
+        <WebView
+            android:id="@+id/webView1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:text="Pay"
+            android:background="#DD371B"
+            android:id="@+id/btn_pay"
+            android:layout_marginBottom="2sp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:visibility="gone"
+            android:layout_gravity="center_horizontal"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:text="Cancel"
+            android:background="#DD371B"
+            android:id="@+id/btn_cancel"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="2sp"
+            android:layout_toLeftOf="@+id/btn_pay"
+            android:layout_alignParentBottom="true"
+            android:visibility="gone"
+            android:layout_gravity="center_horizontal"/>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

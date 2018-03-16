@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_back_login"
+    android:orientation="vertical" >
+   <include
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"        
+        layout="@layout/header_item_pcj"
+       android:id="@+id/include2" />
+
+    <!--<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentTop="false"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="false"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        &lt;!&ndash;<Button
+            android:id="@+id/btnOrderOnline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@mipmap/order_online"
+            android:padding="5dp"
+            android:scaleType="centerCrop"
+            android:text="ORDER ONLINE"
+            android:textColor="@color/button_text"
+            android:textSize="17sp" />&ndash;&gt;
+
+
+    </LinearLayout>-->
+
+    <Button
+        android:id="@+id/btnlogin"
+        android:layout_width="240dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/login"
+        android:textColor="@color/coloricon"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/btnRegister" />
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="240dp"
+        android:layout_height="50dp"
+        android:textColor="@color/coloricon"
+        android:layout_marginBottom="43dp"
+        android:background="@drawable/ragister"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="145dp"
+        android:layout_height="110dp"
+        android:id="@+id/imageView"
+        android:background="@drawable/pcg_temp_logo"
+        android:backgroundTint="#DD371B"
+        android:layout_below="@+id/include2"
+        android:layout_marginTop="25dp"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>

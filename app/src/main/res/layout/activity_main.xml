@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/main_back_login"
+    tools:context="com.lnsel.srfoods.MainActivity">
+
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/imageView"
+        android:src="@drawable/main_logo"
+        android:layout_marginTop="80dp"
+       android:layout_gravity="top"
+        android:visibility="visible"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+
+
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:textSize="20sp"
+        android:onClick="btn_click"
+        android:id="@+id/btn_srfoods"
+        android:textColor="#ffffff"
+        android:background="#DD371B"
+        android:layout_gravity="center"
+        android:text="RC"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/btn_pcj" />
+
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:onClick="btn_click"
+        android:id="@+id/btn_pcj"
+        android:background="#DD371B"
+        android:textSize="20sp"
+        android:textColor="#ffffff"
+        android:layout_gravity="center"
+        android:text="PCG"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+
+
+</RelativeLayout>

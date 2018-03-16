@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorbg"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/header_item_pcj" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="false"
+        android:gravity="center"
+        android:layout_marginTop="105dp"
+        android:orientation="vertical"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:textSize="30sp"
+            android:layout_marginBottom="20sp"
+            android:background="@drawable/pcg_temp_logo"
+            android:backgroundTint="#DD371B"
+            android:layout_gravity="center_horizontal"/>
+
+
+        <EditText
+            android:id="@+id/etndealerusername"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:background="@drawable/ractangle_box_pcj"
+            android:scaleType="centerCrop"
+            android:paddingLeft="5dp"
+            android:hint="enter user name"
+            android:textSize="15sp"
+            />
+
+        <EditText
+            android:id="@+id/etndealerpassword"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="5dp"
+            android:background="@drawable/ractangle_box_pcj"
+            android:scaleType="centerCrop"
+            android:hint="enter password"
+            android:textSize="15sp"
+            android:password="true"/>
+
+        <Button
+            android:id="@+id/btndealerlogin"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:background="#DD371B"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:scaleType="centerCrop"
+            android:text="Login"
+            android:textColor="@color/coloricon"
+            android:textSize="18sp" />
+
+        <RelativeLayout
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp">
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rememberme"
+                android:textSize="14sp"
+                android:text="Remember me"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/forgotpass"
+                android:text="forgot username and password ?"
+                android:textColor="#000000"
+                android:textSize="14sp"
+                android:textStyle="italic"
+                android:layout_marginTop="5dp"
+                android:gravity="center_vertical"
+                android:layout_below="@+id/rememberme"/>
+
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

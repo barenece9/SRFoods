@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:background="#8a1b12"
+    android:weightSum="100"
+    android:elevation="5dp">
+<!--#DD371B-->
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="10" >
+
+            <Button
+                android:id="@+id/btnBack"
+                android:layout_width="23dp"
+                android:layout_height="26dp"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="left|center_vertical"
+                android:background="@drawable/back" />
+
+        </FrameLayout>
+        
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="78"
+             >
+
+            <ImageView
+                android:id="@+id/imageViewLogo"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/pcg_temp_logo"
+                android:backgroundTint="#DD371B"/>
+
+            <TextView
+                android:id="@+id/headerTxt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="50dp"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@+id/imageViewLogo"
+                android:text="Home"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:layout_marginTop="15dp"
+                android:textColor="#ffffff" />
+
+            <!--<ImageView
+                android:id="@+id/imgCart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:visibility="gone"
+                android:src="@mipmap/cart" />-->
+
+        </RelativeLayout>
+        
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="12" >
+
+            <Button
+                android:id="@+id/btnLogout"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_marginRight="5dp"
+                android:layout_gravity="right|center_vertical"
+                android:background="@drawable/logout" />
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

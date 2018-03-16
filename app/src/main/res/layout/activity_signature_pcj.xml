@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/linearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorbg"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/include"
+        layout="@layout/header_item_pcj" />
+
+    <TableLayout
+        android:layout_height="wrap_content"
+        android:id="@+id/tableLayout1"
+        android:layout_width="match_parent">
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+            <TextView
+                android:layout_height="wrap_content"
+                android:id="@+id/textView2"
+                android:text="Your Name"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_width="wrap_content"
+                android:paddingLeft="10sp"
+                android:layout_gravity="right" />
+            <EditText
+                android:layout_height="wrap_content"
+                android:id="@+id/yourName"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:maxLength="30">
+                <requestFocus />
+            </EditText>
+        </TableRow>
+        <LinearLayout
+            android:id="@+id/tableRow3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_height="wrap_content"
+                android:text="After Receive Product "
+                android:maxLength="30"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_width="wrap_content" />
+            <TextView android:layout_height="wrap_content"
+                android:text="Please Sign below ..."
+                android:maxLength="30"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_width="wrap_content" />
+        </LinearLayout>
+    </TableLayout>
+    <LinearLayout
+        android:layout_height="280dp"
+        android:orientation="vertical"
+        android:id="@+id/linearLayout"
+        android:background="#cccccc"
+        android:layout_width="match_parent" />
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent">
+        <Button
+            android:layout_height="50dp"
+            android:layout_weight=".30"
+            android:text="Pay More"
+            android:background="#DD371B"
+            android:textColor="@color/coloricon"
+            android:layout_width="0dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:id="@+id/cancel" />
+        <Button
+            android:layout_height="50dp"
+            android:layout_weight=".35"
+            android:text="Clear"
+            android:background="#DD371B"
+            android:textColor="@color/coloricon"
+            android:layout_marginRight="3dp"
+            android:layout_width="0dp"
+            android:id="@+id/clear" />
+        <Button
+            android:layout_height="50dp"
+            android:layout_weight=".35"
+            android:text="SUBMIT"
+            android:layout_marginRight="3dp"
+            android:background="#DD371B"
+            android:textColor="@color/coloricon"
+            android:layout_width="0dp"
+            android:id="@+id/getsign" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorbg"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/include"
+        layout="@layout/header_item" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="false"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/include"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:gravity="center">
+
+
+
+        <Button
+            android:id="@+id/btndealerprofile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:onClick="click"
+            android:visibility="gone"
+            android:background="@drawable/login_header"
+            android:paddingLeft="25dp"
+            android:scaleType="centerCrop"
+            android:text="DELIVERY BOY PROFILE"
+            android:textColor="#000000"
+            android:textSize="17sp" />
+
+        <Button
+            android:id="@+id/btndealernewoder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="click"
+            android:layout_marginTop="0dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/login_header"
+            android:paddingLeft="25dp"
+            android:scaleType="centerCrop"
+            android:text="PENDDING ORDER"
+            android:textColor="#000000"
+            android:textSize="17sp" />
+
+        <Button
+            android:id="@+id/btndealerpriviousoder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="click"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/login_header"
+            android:paddingLeft="25dp"
+            android:scaleType="centerCrop"
+            android:text="COMPLETED ORDER"
+            android:textColor="#000000"
+            android:textSize="17sp" />
+
+        <Button
+            android:id="@+id/btnRegChef"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/login_header"
+            android:paddingLeft="25dp"
+            android:scaleType="centerCrop"
+            android:text="DELIVERY BOY REGISTER"
+            android:textColor="#000000"
+            android:textSize="17sp" />
+
+    </LinearLayout>
+
+</RelativeLayout>
